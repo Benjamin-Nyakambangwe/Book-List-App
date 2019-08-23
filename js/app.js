@@ -24,11 +24,11 @@ class UI {
 
         const books = StoredBooks;
 
-        books.forEach((book) => UI.addBookToList(book));
+        books.array.forEach((book) => UI.addBookToList(book));
     }
 
     static addBookToList(book) {
-        const list = document.querySelector('#book-list');
+        const list = document.getElementById('book-list');
 
         const row = document.createElement('tr');
 
@@ -42,6 +42,8 @@ class UI {
             list.appendChild(row);
 
     }
+
+    //testing url change
 }
 //Store Class: Handles Storage
 
